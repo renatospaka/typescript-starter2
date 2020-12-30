@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "outDir": "public",
+    "rootDir": "src",
+    "sourceMap": true
+  },
+  "files": [
+    "src/*.ts"
+  ]
+}

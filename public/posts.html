@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typescript na Prática</title>
+</head>
+<body>
+  <h1>Typescript na Prática</h1>
+  <div id="box-post-list" style="display: none;">
+    <h3>Meus posts</h3>
+    <button type="button">Novo</button>
+    <table id="table" class="table">
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Conteúdo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>título 1</td>
+          <td>conteúdo 1</td>
+        </tr>
+        <tr>
+          <td>título 2</td>
+          <td>conteúdo 2</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="box-post-form">
+    <h3>Criar novo post</h3>
+    <button type="button">Listar meus posts</button>
+    <form>
+      <input type="hidden" name="id">
+      <div class="form-group">
+        <label for="title">Título</label>
+        <input type="text" id="title" name="title" placeholder="Título" required>
+      </div>
+      <div class="form-group">
+        <label for="body">Conteúdo</label>
+        <textarea id="body" name="body"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="birthday">Aniversário</label>
+        <input type="text" id="birthday" name="birthday" class="form-control" required>
+      </div>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+  <script type="text/javascript" src="../src/posts.js"></script>
+</body>
+</html>
