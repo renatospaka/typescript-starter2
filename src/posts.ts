@@ -90,6 +90,16 @@ class BoxPostForm {
   }
 }
 
-const eventManager = new EventManager();
-new BoxPostList(eventManager);
-new BoxPostForm(eventManager);
+class PostPage {
+  constructor(private eventManager: EventManager) {
+    this.init();
+  }
+
+  private init() {
+    new BoxPostList(this.eventManager);
+    new BoxPostForm(this.eventManager);
+  }
+}
+
+new PostPage(new EventManager());
+
