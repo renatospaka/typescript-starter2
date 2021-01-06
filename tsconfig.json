@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "ES2019",
     "outDir": "public",
     "rootDir": "src",
+    "module": "AMD",
     "sourceMap": true
   },
   "files": [
