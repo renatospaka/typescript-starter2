@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES2019",
-    "outDir": "public",
+    "target": "es6",
+    "module": "amd",
     "rootDir": "src",
-    "module": "AMD",
-    "sourceMap": true
+    "outDir": "public/js",
+    "sourceMap": true,
+    "inlineSources": true
   },
   "files": [
-    "src/*.ts"
+    "src/test.ts"
   ]
 }
