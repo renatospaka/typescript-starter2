@@ -25,7 +25,7 @@ export default class Http {
     xHttp.onreadystatechange = function() {
       if (this.readyState ==4) {
         const response = new Response(this.responseText, this.status);
-        if (this.this.status == 200) {
+        if (this.status == 200) {
           resolve(response);
         }
       }
