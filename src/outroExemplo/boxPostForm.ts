@@ -1,4 +1,4 @@
-import EventManager from './eventManager';
+import EventManager from './outroExemplo/eventManager';
 import BoxPostList from './boxPostList';
 
 export default class BoxPostForm {

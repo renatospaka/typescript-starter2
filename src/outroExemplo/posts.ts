@@ -1,5 +1,5 @@
 import EventManager from './eventManager';
-import BoxPostForm from './boxPostForm';
+import BoxPostForm from '../boxPostForm';
 import BoxPostList from './boxPostList';
 
 class PostPage {
