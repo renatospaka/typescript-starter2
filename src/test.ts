@@ -1,17 +1,17 @@
-import './module1';
-import postHttp from './http/postHttp';
+// import './module1';
+// import postHttp from './http/postHttp';
 
-function meuMetodo(posts) {
+// function meuMetodo(posts) {
 
-}
+// }
 
-function getPosts(responseText) {
-  console.log(responseText);
-  //meuMetodo(posts);
-}
+// function getPosts(responseText) {
+//   console.log(responseText);
+//   //meuMetodo(posts);
+// }
 
-function error(responseText) {
-  //faça algo
-}
+// function error(responseText) {
+//   //faça algo
+// }
 
-new postHttp().query();
+// new postHttp().query();

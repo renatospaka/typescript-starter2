@@ -1,21 +1,21 @@
 export default abstract class Table {
-  constructor(private selector, private data: Array<any>, private columns: Array<string>) {
+  constructor(private selector: string, private columns: Array<string>, private _data?: Array<any>) {
 
   }
 
   protected createRow() {
-    for (let row of this.data) {
+    for (let row of this._data) {
       const tr = document.createElement('tr');
       for (let column of this.columns) {
-        this.getElement().appendChild(tr);
         this.createCol(tr, row[column]);
+        this.getElement().appendChild(tr);
       }
     }
   };
   
-  protected createCol(row, data:any) {
+  protected createCol(row, columnData:any) {
     let td = document.createElement('td');
-    td.innerHTML = data;
+    td.innerHTML = columnData;
     row.appendChild(td);
   };
 
@@ -25,5 +25,9 @@ export default abstract class Table {
 
   make() {
     this.createRow();
-  }
+  };
+
+  set data(value) {
+    this._data = value
+  };
 } 
